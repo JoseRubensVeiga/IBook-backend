@@ -7,9 +7,9 @@ namespace IBook.API.Controllers
     public class HomeController : ControllerBase
     {
         [HttpGet]
-        public string Test()
+        public string Test([FromServices] IConfiguration _configuration)
         {
-            return "teste develop";
+            return _configuration["ENVIRONMENT"];
         }
     }
 }
