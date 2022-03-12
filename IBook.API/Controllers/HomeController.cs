@@ -9,7 +9,7 @@ namespace IBook.API.Controllers
         [HttpGet]
         public string Test()
         {
-            return "teste";
+            return "teste develop";
         }
     }
 }
